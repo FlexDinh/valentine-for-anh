@@ -157,66 +157,73 @@
 
     <!-- ==================== LOCK SCREEN ==================== -->
     <div id="lock-screen"
-        class="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black/90 backdrop-blur-md transition-opacity duration-1000">
-        <div class="text-center mb-8 animate-float">
-            <div class="text-6xl mb-4 animate-bounce-slight">💖</div>
-            <h2 class="text-3xl font-bold text-pink-300 font-pacifico drop-shadow-lg">My Valentine</h2>
-            <p class="text-sm text-gray-300 mt-2">Mật khẩu là ngày sinh nhật bé Ánh (ddmm)</p>
+        class="absolute inset-0 z-50 flex flex-col items-center justify-center bg-[url('https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center transition-opacity duration-1000">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-md z-0"></div>
+
+        <div class="relative z-10 text-center mb-8 animate-float">
+            <div class="text-7xl mb-4 animate-bounce-slight drop-shadow-[0_0_15px_rgba(236,72,153,0.8)]">💖</div>
+            <h2
+                class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-rose-500 font-pacifico drop-shadow-lg">
+                My Valentine</h2>
+            <p class="text-sm text-pink-200 mt-2 font-dancing text-xl">Mật khẩu là ngày sinh nhật bé Ánh (ddmm)</p>
         </div>
 
         <!-- Passcode Display -->
-        <div class="flex space-x-4 mb-8">
+        <div class="relative z-10 flex space-x-4 mb-8">
             <div
-                class="dot w-4 h-4 rounded-full border-2 border-pink-500 bg-transparent transition-all duration-200 shadow-[0_0_10px_rgba(236,72,153,0.5)]">
+                class="dot w-4 h-4 rounded-full border-2 border-pink-400 bg-transparent transition-all duration-200 shadow-[0_0_10px_rgba(236,72,153,0.8)]">
             </div>
             <div
-                class="dot w-4 h-4 rounded-full border-2 border-pink-500 bg-transparent transition-all duration-200 shadow-[0_0_10px_rgba(236,72,153,0.5)]">
+                class="dot w-4 h-4 rounded-full border-2 border-pink-400 bg-transparent transition-all duration-200 shadow-[0_0_10px_rgba(236,72,153,0.8)]">
             </div>
             <div
-                class="dot w-4 h-4 rounded-full border-2 border-pink-500 bg-transparent transition-all duration-200 shadow-[0_0_10px_rgba(236,72,153,0.5)]">
+                class="dot w-4 h-4 rounded-full border-2 border-pink-400 bg-transparent transition-all duration-200 shadow-[0_0_10px_rgba(236,72,153,0.8)]">
             </div>
             <div
-                class="dot w-4 h-4 rounded-full border-2 border-pink-500 bg-transparent transition-all duration-200 shadow-[0_0_10px_rgba(236,72,153,0.5)]">
+                class="dot w-4 h-4 rounded-full border-2 border-pink-400 bg-transparent transition-all duration-200 shadow-[0_0_10px_rgba(236,72,153,0.8)]">
             </div>
         </div>
 
         <!-- Keypad -->
-        <div class="grid grid-cols-3 gap-6 w-72">
+        <div class="relative z-10 grid grid-cols-3 gap-6 w-72">
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="1">1</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="2">2</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="3">3</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="4">4</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="5">5</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="6">6</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="7">7</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="8">8</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="9">9</button>
             <div class="w-16 h-16"></div>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold active:bg-pink-500/50 active:scale-95 transition-all text-pink-100"
+                class="keypad-btn w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-pink-500/30 flex items-center justify-center text-2xl font-bold active:bg-pink-500 active:scale-95 transition-all text-pink-100 shadow-lg hover:bg-pink-500/20"
                 data-val="0">0</button>
             <button
-                class="keypad-btn w-16 h-16 rounded-full glass flex items-center justify-center text-2xl font-bold text-red-300 active:bg-red-500/50 active:scale-95 transition-all"
+                class="keypad-btn w-16 h-16 rounded-full bg-transparent flex items-center justify-center text-2xl font-bold text-rose-400 active:scale-95 transition-all"
                 data-val="del">⌫</button>
         </div>
+
+        <p class="relative z-10 text-xs text-pink-300/50 mt-8 animate-pulse">Made for Ánh</p>
     </div>
 
 
